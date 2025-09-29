@@ -18,7 +18,8 @@ header, .cyan {
 nav, .magenta {
   background: #D40F7D;
 }
-main, .yellow {
+
+.yellow {
   background: #FAE100;
 }
 footer, .black {

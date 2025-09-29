@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Layout 1</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+
+      main {
+        display: masonry;
+        grid-template-columns: 20% 20% 20% 20%;
+        gap: 1em;
+      }
+
+      .cyan {
+        height: 500px;
+        width: 100%;
+        grid-column-start: 1;
+      }
+
+      .yellow {
+        height: 400px;
+        width: 100%;
+        grid-column-start: 2;
+      }
+
+      .magenta {
+        height: 300px;
+        width: 100%;
+        grid-column-start: 3;
+      }
+
+      .black {
+        width: 100%;
+        height: 600px;
+        grid-column-start: 4;
+      }
     </style>
   </head>
   <body id="advanced-layout-1">
-
     <header><h1>Advanced Layout 1</h1></header>
 
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
 
     <!-- Kopieer en mix zoveel als je nodig hebt -->
-    <section class="yellow"></section>
-    <section class="black"></section>
-    <section class="cyan"></section>
-    <section class="magenta"></section>
-    <section class="yellow"></section>
-    <section class="black"></section>
-    <section class="cyan"></section>
-    <section class="magenta"></section>
-    <section class="yellow"></section>
-
-    <footer></footer>
-
+    <main>
+      <section class="yellow"></section>
+      <section class="black"></section>
+      <section class="cyan"></section>
+      <section class="magenta"></section>
+      <section class="yellow"></section>
+      <section class="black"></section>
+      <section class="cyan"></section>
+      <section class="magenta"></section>
+      <section class="yellow"></section>
+    </main>
   </body>
 </html>
